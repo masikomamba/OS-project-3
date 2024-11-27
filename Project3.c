@@ -9,6 +9,7 @@
 #include <sys/wait.h>
 #include <fcntl.h>
 #include <semaphore.h>
+#include <unistd.h>
 #define BUFFER_SIZE 15
 
 int main() {
@@ -85,7 +86,7 @@ int main() {
                 if (readChar == '*') break;  // End if special character is read
                 putchar(readChar);           // Print character
                 fflush(stdout);
-                sleep(1)
+                sleep(1);
             }
             return NULL;
         }
