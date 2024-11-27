@@ -85,6 +85,7 @@ int main() {
                 if (readChar == '*') break;  // End if special character is read
                 putchar(readChar);           // Print character
                 fflush(stdout);
+                sleep(1)
             }
             return NULL;
         }
